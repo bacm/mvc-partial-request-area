@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mvc-partial-areas", "mvc-partial-areas\mvc-partial-areas.csproj", "{2A46FC6F-A565-466E-A4F3-50D12F1402FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mvc-partial-areas.tests", "mvc-partial-areas.tests\mvc-partial-areas.tests.csproj", "{0A846459-801F-4162-96F8-DF022C47FEEA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A46FC6F-A565-466E-A4F3-50D12F1402FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A46FC6F-A565-466E-A4F3-50D12F1402FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A46FC6F-A565-466E-A4F3-50D12F1402FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A46FC6F-A565-466E-A4F3-50D12F1402FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A846459-801F-4162-96F8-DF022C47FEEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A846459-801F-4162-96F8-DF022C47FEEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A846459-801F-4162-96F8-DF022C47FEEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A846459-801F-4162-96F8-DF022C47FEEA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
