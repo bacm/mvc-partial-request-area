@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
 namespace mvc_partial_areas.Controllers
 {
@@ -13,18 +9,11 @@ namespace mvc_partial_areas.Controllers
             return View();
         }
 
-        public ActionResult About()
+        [ChildActionOnly]
+        [OutputCache(Duration = 3600, VaryByCustom = "partial")]
+        public PartialViewResult ActionResult()
         {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
+            return PartialView("_Area");
         }
     }
 }
