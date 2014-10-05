@@ -3,12 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Mvc.Html;
 using System.Web.Optimization;
 using System.Web.Routing;
 
 namespace mvc_partial_areas
 {
-    public class MvcApplication : System.Web.HttpApplication
+    public static class HtmlPartialExtendions
+    {
+        public static void RenderWidget(this HtmlHelper html, string widget)
+        {
+            html.RenderAction("ActionResult", "Widgets", new { name = "widget" });
+            // render script here
+        }
+    }
+
+    public class MvcApplication : HttpApplication
     {
         protected void Application_Start()
         {
@@ -31,7 +41,7 @@ namespace mvc_partial_areas
                 // might use other custom string based on area to render, like action parameters
 
                 var id = context.Session["id"];
-                return "Partial=" + id;
+                return id.ToString();
             }
 
             return base.GetVaryByCustomString(context, custom);
